@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML and JS Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>Click the button below to see a greeting message:</p>
+    <button onclick="showGreeting()">Click Me</button>
+    <p id="greeting"></p>
+
+    <script>
+        function showGreeting() {
+            document.getElementById("greeting").textContent = "Hello! Welcome to the world of JavaScript!";
+        }
+    </script>
+</body>
+</html>
